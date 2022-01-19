@@ -36,12 +36,17 @@ const Machine = () => {
     }
   };
 
+  //setting array 
+  const setArray = () => {
+    setar1(arr1[randomindex()]);
+    setar2(arr2[randomindex()]);
+    setar3(arr3[randomindex()]);
+  }
+
   //reshuffling the arrays
   const reshuffel = () => {
     if (chances > 0) {
-      setar1(arr1[randomindex()]);
-      setar2(arr2[randomindex()]);
-      setar3(arr3[randomindex()]);
+      setArray();
       setmoney(money - 100);
     } else {
       alert("your chances are over");
@@ -53,13 +58,13 @@ const Machine = () => {
     setchances(chances - 1);
   };
 
+  //reseting the function
   const refresh = () => {
+    setArray();
     alert("resetting ....");
     setchances(5);
     setmoney(500);
-    setar1(arr1[randomindex()]);
-    setar2(arr2[randomindex()]);
-    setar3(arr3[randomindex()]);
+
   };
 
   return (
