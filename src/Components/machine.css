@@ -1,0 +1,49 @@
+.Machine_items {
+  /* background-color: aliceblue; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.Machine_items h1 {
+  background-color: aliceblue;
+  border: 2px solid black;
+  margin-left: 10px;
+  padding: 10px;
+}
+.macine_money {
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 30px;
+  margin-top: 10px;
+  color: aliceblue;
+  border-radius: 20px;
+  padding: 2px 20px;
+  background-color: rgb(18, 18, 117);
+}
+.Machine-layout {
+  position: relative;
+}
+.Machine-layout button {
+  margin: 20px;
+  padding: 5px 9px;
+  font-size: 15px;
+  color: antiquewhite;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px aqua;
+}
+.button_container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 700px) {
+  .macine_money {
+    position: absolute;
+    margin-top: 100%;
+    right: 0;
+  }
+}
